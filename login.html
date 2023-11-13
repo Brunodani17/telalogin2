@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern-Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="login">
+            <h3>Login</h3>
+        </div>
+
+        <div class="username">
+            <input type="login" placeholder="Username" id="username">
+        </div>
+
+        <div class="password">
+            <input type="password" placeholder="Password" id="senha">
+        </div>
+
+        <div class="entrar">
+            <input type="button" value="Login" onclick="entrar();return false">
+        </div>
+
+        <div class="register">
+            <input type="button" value="Register" id="register" onclick="location.href='register.html'">
+        </div>
+
+
+    </div>
+
+
+    <script>
+
+        function entrar(){
+
+            var username = document.getElementById('username').value;
+            var senha = document.getElementById('senha').value;
+
+            if(username == "admin" && senha == "12345"){
+                alert('Success')
+                location.href = "home.html";
+            }else{
+                alert('Login or Password wrong  <3')
+            }
+        }
+
+        function register(){
+
+            location.href = "register.html"
+        }
+        
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
