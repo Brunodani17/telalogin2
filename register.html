@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Register">
+            <h3>Register</h3>
+        </div>
+    
+        <div class="username">
+            <input type="login" placeholder="Username" id="username">
+        </div>
+    
+        <div class="password">
+            <input type="password" placeholder="Password" id="senha">
+        </div>
+        <div class="registerbutton">
+            <input type="button" value="Register" id="registerbutton" onclick="registerbutton();return false">
+        </div>
+    </div>
+
+
+    <script>
+        function registerbutton(){
+            var username = document.getElementById('username').value;
+            var senha = document.getElementById('senha').value;
+
+            if(username != "" && senha != ""){
+                alert('Successfully Registered')
+                location.href = ("login.html");
+            }else{
+                alert('Write Something')
+            }
+    
+
+        }
+
+    </script>
+    
+</body>
+</html>
